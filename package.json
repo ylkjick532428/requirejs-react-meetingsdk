@@ -2,5 +2,13 @@
   "amd": {},
   "volo": {
     "baseUrl": "www/lib"
+  },
+  "dependencies": {
+    "@zoom/meetingsdk": "https://registry.npmjs.org/@zoom/meetingsdk/-/meetingsdk-3.5.2.tgz"
+  },
+  "scripts": {
+    "update": "cp -f ./node_modules/@zoom/meetingsdk/dist/zoomus-websdk.umd.min.js ./www/lib/zoomus-websdk.umd.min.js",
+    "start": "python3 server.py corp",
+    "dev": "python3 server.py"
   }
 }

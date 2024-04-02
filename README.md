@@ -19,4 +19,24 @@ For more information on the optimizer:
 http://requirejs.org/docs/optimization.html
 
 For more information on using requirejs:
+
 http://requirejs.org/docs/api.html
+
+update version
+```
+npm i
+npm run update
+```
+
+run server, no sab
+```
+npm run dev
+open http://127.0.0.1:8000
+```
+
+
+run server, with SAB
+```
+npm run start
+open http://127.0.0.1:8000
+```

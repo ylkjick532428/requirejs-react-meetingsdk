@@ -49,12 +49,12 @@ window.addEventListener("DOMContentLoaded", function (event) {
     console.log(JSON.stringify(ZoomMtg.checkSystemRequirements()));
   
     // it's option if you want to change the MeetingSDK-Web dependency link resources. setZoomJSLib must be run at first
-    // ZoomMtg.setZoomJSLib("https://source.zoom.us/{VERSION}/lib", "/av"); // default, don't need call it
+    // ZoomMtg.setZoomJSLib("https://source.zoom.us/3.5.2/lib", "/av"); // default, don't need call it
     if (meetingConfig.china)
-      ZoomMtg.setZoomJSLib("https://jssdk.zoomus.cn/3.1.6/lib", "/av"); // china cdn option
+      ZoomMtg.setZoomJSLib("https://jssdk.zoomus.cn/3.5.2/lib", "/av"); // china cdn option
   
     ZoomMtg.preLoadWasm();
-    ZoomMtg.prepareWebSDK();
+    ZoomMtg.prepareWebSDK('', '', ''); // requirejs need this for skip load webim.js and js_media.min.js
   
     function beginJoin(signature) {
       ZoomMtg.i18n.load(meetingConfig.lang);
