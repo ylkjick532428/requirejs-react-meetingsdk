@@ -4,7 +4,7 @@
     "baseUrl": "www/lib"
   },
   "dependencies": {
-    "@zoom/meetingsdk": "https://registry.npmjs.org/@zoom/meetingsdk/-/meetingsdk-3.5.2.tgz"
+    "@zoom/meetingsdk": "3.6.0"
   },
   "scripts": {
     "update": "cp -f ./node_modules/@zoom/meetingsdk/dist/zoomus-websdk.umd.min.js ./www/lib/zoomus-websdk.umd.min.js",

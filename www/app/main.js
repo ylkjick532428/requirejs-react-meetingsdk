@@ -17,8 +17,8 @@ define(function (require) {
     // ZoomMtg
     
     print(devConfig, JsMediaSDK_Instance.version, ZoomMtg, messages.getHello());
-    ZoomMtg.preLoadWasm();
-    ZoomMtg.prepareWebSDK();
+
+    ZoomMtg.prepareWebSDK('', '', '');
     ZoomMtg.init({
         debug: true, // optional,
         // defaultView: 'gallery', // speaker || gallery
